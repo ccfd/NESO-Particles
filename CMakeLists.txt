@@ -258,6 +258,17 @@ if(NESO_PARTICLES_ENABLE_TESTS)
   add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/test)
 endif()
 
+option(NESO_PARTICLES_ENABLE_PPROPAGATE "Build Propagate project." ON)
+# Include the tests
+if(NESO_PARTICLES_ENABLE_PPROPAGATE)
+  # set build type
+  if(NOT CMAKE_BUILD_TYPE)
+    set(CMAKE_BUILD_TYPE "Release")
+    message(STATUS "Set CMAKE_BUILD_TYPE=Release")
+  endif()
+  add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/propagate)
+endif()
+
 # install the headers
 install(
   TARGETS NESO-Particles

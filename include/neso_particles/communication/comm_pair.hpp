@@ -42,6 +42,18 @@ public:
   ~CommPair(){};
   CommPair(){};
 
+  bool is_intra()
+  {
+      if(rank_intra == 0)
+      {
+          return true;
+      }
+      else
+      {
+          return false;
+      }
+  }
+
   /**
    * Create a new set of inter and intra shared memory region communicators
    * from a parent communicator. Must be called collectively on the parent

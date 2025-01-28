@@ -7,7 +7,7 @@ set(TEST_MAIN ${CMAKE_CURRENT_SOURCE_DIR}/main.cpp)
 # Build the tests individually
 add_executable(${EXECUTABLE} ${TEST_MAIN})
 
-target_link_libraries(${EXECUTABLE} PRIVATE NESO-Particles)
+target_link_libraries(${EXECUTABLE} PRIVATE NESO-Particles fftw3)
 target_compile_definitions(${EXECUTABLE} PRIVATE GPU_SELECTOR=0)
 target_compile_definitions(${EXECUTABLE}
                            PRIVATE CMAKE_INSTALL_PREFIX=${CMAKE_INSTALL_PREFIX})

@@ -1,5 +1,6 @@
 #include <iostream>
 #include <neso_particles.hpp>
+#include "neso_particles/containers/chflow_reader.hpp"
 #include <mpi.h>
 #include <fftw3.h>
 

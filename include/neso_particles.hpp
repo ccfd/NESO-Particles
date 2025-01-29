@@ -9,7 +9,7 @@
 #include "neso_particles/cell_binning.hpp"
 #include "neso_particles/cell_dat.hpp"
 #include "neso_particles/compute_target.hpp"
-#include "neso_particles/containers/chflow_reader.hpp"
+//#include "neso_particles/containers/chflow_reader.hpp"
 #include "neso_particles/containers/blocked_binary_tree.hpp"
 #include "neso_particles/containers/descendant_products.hpp"
 #include "neso_particles/containers/global_array.hpp"
